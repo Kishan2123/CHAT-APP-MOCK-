@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="welcome-screen" class="welcome-container">
+    <div class="welcome-card">
+        <h1>Mock Chat App</h1>
+        <p>Welcome to our interactive Mock Chat application. Engage in simulated conversations with auto-replies, complete with timestamps and chat history management. Your chats are safely saved locally, ensuring a seamless experience.</p>
+        <p class="credits">MINI PROJECT DONE BY KISHAN M NAIDU</p>
+        <button class="use-now-btn" onclick="startApp()">use now</button>
+    </div>
+</div>
+
+<div id="chat-screen" class="chat-container" style="display: none;">
+
+    <div class="chat-header">
+        <h2>Mock Chat App</h2>
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="chat-input">
+        <input 
+            type="text" 
+            id="message-input" 
+            placeholder="Type a message..."
+            onkeypress="handleKey(event)"
+        >
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

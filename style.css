@@ -1,0 +1,143 @@
+:root {
+    --bg: #f0f2f5;
+    --chat-bg: white;
+    --user-msg: #0084ff;
+    --bot-msg: #e4e6eb;
+    --text: black;
+}
+
+.dark {
+    --bg: #18191a;
+    --chat-bg: #242526;
+    --user-msg: #0084ff;
+    --bot-msg: #3a3b3c;
+    --text: white;
+}
+
+body {
+    background: var(--bg);
+    font-family: Arial;
+    margin: 0;
+}
+
+.chat-container {
+    max-width: 500px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--chat-bg);
+}
+
+.chat-header {
+    padding: 15px;
+    background: var(--user-msg);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.user {
+    background: var(--user-msg);
+    color: yellow;
+    margin-left: auto;
+}
+
+.bot {
+    background: var(--bot-msg);
+    color: var(--text);
+}
+
+.timestamp {
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+}
+
+.chat-input button {
+    padding: 10px;
+}
+
+/* Welcome Screen */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--bg), #00d2ff);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dark .welcome-container {
+    background: linear-gradient(135deg, var(--bg), #242526);
+}
+
+.welcome-card {
+    background: var(--chat-bg);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-card h1 {
+    margin-top: 0;
+    color: var(--user-msg);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.welcome-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.welcome-card .credits {
+    font-weight: bold;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.use-now-btn {
+    background: var(--user-msg);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+}
+
+.use-now-btn:hover {
+    filter: brightness(0.9);
+}
