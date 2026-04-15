@@ -27,7 +27,7 @@ Web Storage API – Data persistence
 
 Download or clone the repository
 
-git clone https://github.com/your-username/mock-chat-app.git
+git clone https://github.com/Kishan2123/CHAT-APP-MOCK-.git
 Open the project folder
 Double-click on index.html
 The app will open in your browser
